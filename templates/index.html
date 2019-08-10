@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Scrape HomeWork</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+  
+  table{
+border-collapse:collapse;
+border:1px black;
+text-align: center;
+}
+
+table td{
+border:1px solid black;
+}
+  
+  
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission To Mars</h1>
+      <p>Dried Up Beaches. Deserts. Volcanos. Space Sloths.</p>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
+    </div>
+   
+    <h2>Latest Mars News: </h2>
+    <h4>{{mar.news_title}}</h4>
+    
+    
+  </div>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <p>{{mar.news_p}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Featured Mars Image</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <img src={{mar.featured_image_url}} style="height: 500px; width=800px">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+
+
+
+        <h2>Mars Facts</h2>
+
+
+<table style="width:70% ;border:1px solid black;">
+  
+  <tr>
+    <th></th>
+    <th>{{mar.value}}</th>
+  </tr>
+  <tr>
+    <td>{{mar.df1i1}}</td>
+    <td>{{mar.df1v1}}</td>
+  </tr>
+  <tr>
+    <td>{{mar.df1i2}}</td>
+    <td>{{mar.df1v2}}</td>
+  </tr>
+  <tr>
+    <td>{{mar.df1i3}}</td>
+    <td>{{mar.df1v3}}</td>
+  </tr>
+  <tr>
+    <td>{{mar.df1i4}}</td>
+    <td>{{mar.df1v4}}</td>
+  </tr>
+  <tr>
+    <td>{{mar.df1i5}}</td>
+    <td>{{mar.df1v5}}</td>
+  </tr>
+  <tr>
+    <td>{{mar.df1i6}}</td>
+    <td>{{mar.df1v6}}</td>
+  </tr>
+  <tr>
+    <td>{{mar.df1i7}}</td>
+    <td>{{mar.df1v7}}</td>
+  </tr>
+  <tr>
+    <td>{{mar.df1i8}}</td>
+    <td>{{mar.df1v8}}</td>
+  </tr>
+  <tr>
+    <td>{{mar.df1i9}}</td>
+    <td>{{mar.df1v9}}</td>
+  </tr>
+</table>
+
+      </div>
+      <div class="col-md-6" >
+        <h2>Current Weather On Mars</h2>
+        <p>{{mar.mars_weather}}</p>
+      </div>
+    </div>
+
+    
+  </div>
+
+<div class="container" >
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Mars Hemispheres</h2>
+    </div>
+  </div>
+
+  <div class="row" >
+    <div class="col-md-6">
+      <img src={{mar.df2i1}} style="width: 100%">
+      <h3>{{mar.df2t1}}</h3>
+    </div>
+    <div class="col-md-6">
+      <img src={{mar.df2i2}} style="width: 100%">
+      <h3>{{mar.df2t2}}</h3>
+    </div>
+  </div>
+
+  <div class="row" >
+    <div class="col-md-6">
+      <img src={{mar.df2i3}} style="width: 100%">
+      <h3>{{mar.df2t3}}</h3>
+    </div>
+    <div class="col-md-6">
+      <img src={{mar.df2i4}} style="width: 100%">
+      <h3>{{mar.df2t4}}</h3>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<p><a  target="_blank" class="btn btn-primary btn-sm" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" role="button">Secret Button Don't Press</a></p>
+</body>
+
+</html>
